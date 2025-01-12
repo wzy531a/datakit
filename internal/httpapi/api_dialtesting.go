@@ -204,7 +204,7 @@ func IsAllowedHost(host string) (bool, error) {
 	}
 }
 
-func noinit() { //nolint:gochecknoinits
+func init() { //nolint:gochecknoinits
 	parseDialtestingEnvs()
 
 	if DialtestingEnableDebugAPI {

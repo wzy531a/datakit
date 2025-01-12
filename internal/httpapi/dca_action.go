@@ -774,7 +774,7 @@ func reloadDatakitAction(_ *ws.Client, response *ws.DCAResponse, data *ws.Action
 }
 
 // nolint:gochecknoinits
-func noinit() {
+func init() {
 	HostActionHandlerMap = map[string]ws.ActionHandler{
 		ws.GetDatakitStatsAction:          ws.GetActionHandler(ws.GetDatakitStatsAction, getDatakitStatsAction),
 		ws.GetDatakitConfigAction:         ws.GetActionHandler(ws.GetDatakitConfigAction, getDatakitConfigAction),
