@@ -25,7 +25,7 @@ var (
 )
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	dnsDomainCounter = prometheus.NewCounter(
 		prometheus.CounterOpts{
 			Namespace: "datakit",

@@ -26,7 +26,7 @@ const (
 )
 
 // nolint:gochecknoinits
-func init() {
+func noinit() {
 	httpClientTCPConn = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
 			Namespace: "datakit",

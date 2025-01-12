@@ -67,7 +67,7 @@ func metricsSetup() {
 	)
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	metricsSetup()
 	metrics.MustRegister(kafkaGroupElection, kafkaConsumeMessages, processMessageCostVec)
 }

@@ -111,7 +111,7 @@ var (
 )
 
 //nolint:gochecknoinits,lll
-func init() {
+func noinit() {
 	flag.BoolVar(&flagDKUpgrade, "upgrade", false, "")
 
 	flag.IntVar(&flagUpgraderEnabled, "upgrade-manager", 0, "whether we should upgrade the Datakit upgrade service")

@@ -215,7 +215,7 @@ func (ipt *Input) Terminate() {
 	log.Infof("input[%s] exit", inputName)
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	inputs.Add(inputName, func() inputs.Input {
 		return &Input{}
 	})

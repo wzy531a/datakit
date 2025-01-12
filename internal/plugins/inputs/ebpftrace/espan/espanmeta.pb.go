@@ -327,7 +327,7 @@ func (m *SpanMeta) GetKind() Kind {
 	return Kind_Client
 }
 
-func init() {
+func noinit() {
 	proto.RegisterEnum("espan.Kind", Kind_name, Kind_value)
 	proto.RegisterEnum("espan.Direction", Direction_name, Direction_value)
 	proto.RegisterEnum("espan.AppSampled", AppSampled_name, AppSampled_value)
@@ -336,7 +336,7 @@ func init() {
 	proto.RegisterType((*SpanMeta)(nil), "espan.SpanMeta")
 }
 
-func init() { proto.RegisterFile("espanmeta.proto", fileDescriptor_d115bcc9fa8dfe17) }
+func noinit() { proto.RegisterFile("espanmeta.proto", fileDescriptor_d115bcc9fa8dfe17) }
 
 var fileDescriptor_d115bcc9fa8dfe17 = []byte{
 	// 483 bytes of a gzipped FileDescriptorProto

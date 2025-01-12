@@ -74,7 +74,7 @@ func resetMetrics() {
 }
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	metricsSetup()
 	metrics.MustRegister(allMetrics()...)
 }

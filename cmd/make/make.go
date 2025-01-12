@@ -22,7 +22,7 @@ import (
 	"gitlab.jiagouyun.com/cloudcare-tools/datakit/internal/version"
 )
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	flag.StringVar(&build.AppBin, "binary", build.AppBin, "binary name to build")
 	flag.StringVar(&build.AppName, "name", build.AppName, "same as -binary")
 	flag.StringVar(&build.BuildDir, "build-dir", "build", "output of build files")

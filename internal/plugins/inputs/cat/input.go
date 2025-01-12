@@ -167,7 +167,7 @@ func (ipt *Input) Terminate() {
 	httpapi.RemoveHTTPRoute("get", "/cat/s/router")
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	inputs.Add(inputName, func() inputs.Input {
 		return &Input{semStop: cliutils.NewSem()}
 	})

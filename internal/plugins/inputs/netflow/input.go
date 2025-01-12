@@ -284,7 +284,7 @@ func defaultInput() *Input {
 	}
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	inputs.Add(common.InputName, func() inputs.Input {
 		return defaultInput()
 	})

@@ -24,7 +24,7 @@ const (
 )
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	registerResource("job", true, false, newJob)
 	registerMeasurements(&jobMetric{}, &jobObject{})
 }

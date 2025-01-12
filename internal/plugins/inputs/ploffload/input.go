@@ -209,7 +209,7 @@ func defaultInput() *Input {
 	}
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	metrics.MustRegister(chanCapVec)
 	metrics.MustRegister(chanUsageVec)
 	metrics.MustRegister(ptCounterVec)

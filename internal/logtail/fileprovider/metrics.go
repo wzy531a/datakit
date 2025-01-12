@@ -53,6 +53,6 @@ func setupMetrics() {
 }
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	setupMetrics()
 }

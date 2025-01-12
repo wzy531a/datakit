@@ -97,7 +97,7 @@ func Metrics() []prometheus.Collector {
 }
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	metricsSetup()
 	metrics.MustRegister(Metrics()...)
 }

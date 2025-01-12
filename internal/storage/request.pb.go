@@ -308,7 +308,7 @@ var file_internal_storage_request_proto_depIdxs = []int32{
 	0, // [0:3] is the sub-list for field type_name
 }
 
-func init() { file_internal_storage_request_proto_init() }
+func noinit() { file_internal_storage_request_proto_init() }
 func file_internal_storage_request_proto_init() {
 	if File_internal_storage_request_proto != nil {
 		return

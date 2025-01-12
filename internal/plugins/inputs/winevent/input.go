@@ -472,7 +472,7 @@ func openPublisherMetadata(
 	return h, nil
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	inputs.Add(inputName, func() inputs.Input {
 		return &Input{
 			buf:   make([]byte, 1<<14),

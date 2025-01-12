@@ -18,6 +18,6 @@ var connectionTotalGauge = prometheus.NewGauge(prometheus.GaugeOpts{
 })
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	metrics.MustRegister([]prometheus.Collector{connectionTotalGauge}...)
 }

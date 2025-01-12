@@ -242,7 +242,7 @@ func flushToFile(data []byte) error {
 	return nil
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	x, err := os.Hostname()
 	if err != nil {
 		hostname = "unknown"

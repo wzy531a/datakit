@@ -27,7 +27,7 @@ const (
 )
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	registerResource("pod", true, true, newPod)
 	registerMeasurements(&podMetric{}, &podObject{})
 }

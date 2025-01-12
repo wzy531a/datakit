@@ -643,7 +643,7 @@ func gatherDisk(tags map[string]string, timeout time.Duration, sudo bool,
 	return &smartMeasurement{name: "smart", tags: tags, fields: fields, ts: time.Now()}, nil
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	inputs.Add(inputName, func() inputs.Input {
 		return &Input{
 			SmartCtlPath:     defSmartCtlPath,

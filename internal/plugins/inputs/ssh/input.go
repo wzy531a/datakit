@@ -295,7 +295,7 @@ func getMsInterval(d time.Duration) float64 {
 	return float64(ns) / float64(time.Millisecond)
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	inputs.Add(inputName, func() inputs.Input {
 		return &Input{
 			semStop: cliutils.NewSem(),

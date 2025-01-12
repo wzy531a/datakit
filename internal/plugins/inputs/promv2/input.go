@@ -237,7 +237,7 @@ func newProm() *Input {
 	}
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	setupMetrics()
 	inputs.Add(inputName, func() inputs.Input {
 		return newProm()

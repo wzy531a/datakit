@@ -25,7 +25,7 @@ const (
 )
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	registerMeasurements(&event{})
 }
 

@@ -55,6 +55,6 @@ func metricsSetup() {
 }
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	metricsSetup()
 }

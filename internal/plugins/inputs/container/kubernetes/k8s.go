@@ -196,7 +196,7 @@ func (*count) Info() *inputs.MeasurementInfo {
 }
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	setupMetrics()
 	registerMeasurements(&count{})
 }

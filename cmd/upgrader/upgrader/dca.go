@@ -370,7 +370,7 @@ func restartDatakitAction(_ *ws.Client, response *ws.DCAResponse, data *ws.Actio
 }
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	for k, v := range httpapi.HostActionHandlerMap {
 		ActionHandlerMap[k] = v
 	}

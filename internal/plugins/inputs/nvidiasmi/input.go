@@ -583,7 +583,7 @@ func newDefaultInput() *Input {
 	return ipt
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	// TODO 这里 2个，好奇怪啊
 	inputs.Add(inputName, func() inputs.Input {
 		return newDefaultInput()

@@ -41,7 +41,7 @@ type ResourceLimitOptions struct {
 }
 
 //nolint:gochecknoinits,lll
-func init() {
+func noinit() {
 	var err error
 	self, err = process.NewProcess(int32(os.Getpid()))
 	if err != nil {

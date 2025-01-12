@@ -286,7 +286,7 @@ func (ipt *Input) Collect(ptTS int64) error {
 	return nil
 }
 
-func init() { // nolint:gochecknoinits
+func noinit() { // nolint:gochecknoinits
 	inputs.Add(inputName, func() inputs.Input {
 		return &Input{
 			Interval: datakit.Duration{Duration: time.Second * 15},

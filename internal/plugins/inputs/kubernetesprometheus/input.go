@@ -187,7 +187,7 @@ func newPauseVar() *atomic.Bool {
 	return b
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	setupMetrics()
 	inputs.Add(inputName, func() inputs.Input {
 		return &Input{

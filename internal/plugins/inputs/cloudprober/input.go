@@ -177,7 +177,7 @@ func (ipt *Input) SampleMeasurement() []inputs.Measurement {
 	}
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	inputs.Add(inputName, func() inputs.Input {
 		s := &Input{
 			Interval: datakit.Duration{Duration: time.Second * 5},

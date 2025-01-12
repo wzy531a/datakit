@@ -171,7 +171,7 @@ func (i *Input) AvailableArchs() []string {
 	return []string{datakit.OSLabelLinux}
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	inputs.Add(inputName, func() inputs.Input {
 		return &Input{}
 	})

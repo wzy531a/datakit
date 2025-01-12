@@ -24,7 +24,7 @@ const (
 )
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	registerResource("replicaset", true, false, newReplicaset)
 	registerMeasurements(&replicasetMetric{}, &replicasetObject{})
 }

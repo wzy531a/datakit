@@ -33,7 +33,7 @@ func setupMetrics() {
 	)
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	setupMetrics()
 	metrics.MustRegister(jobRunVec)
 }

@@ -36,7 +36,7 @@ var (
 )
 
 // nolint:gochecknoinits
-func init() {
+func noinit() {
 	metrics.MustRegister(
 		ntpSyncCount,
 		ntpSyncSummary,

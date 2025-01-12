@@ -127,7 +127,7 @@ func TestPullPipeline(t *testing.T) {
 	}
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	defPipelinePullMock = &debugPipelinePullMock{}
 }
 

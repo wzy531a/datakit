@@ -1252,7 +1252,7 @@ func defaultInput() *Input {
 	}
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	inputs.Add(snmpmeasurement.InputName, func() inputs.Input {
 		return defaultInput()
 	})

@@ -22,7 +22,7 @@ var (
 	trapsPacketsAuthErrors = expvar.Int{}
 )
 
-func init() { // nolint:gochecknoinits
+func noinit() { // nolint:gochecknoinits
 	trapsExpvars.Set("Packets", &trapsPackets)
 	trapsExpvars.Set("PacketsAuthErrors", &trapsPacketsAuthErrors)
 }

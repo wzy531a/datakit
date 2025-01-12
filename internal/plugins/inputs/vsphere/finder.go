@@ -245,7 +245,7 @@ func matchName(f property.Match, props []types.DynamicProperty) bool {
 }
 
 // nolint: gochecknoinits
-func init() {
+func noinit() {
 	childTypes = map[string][]string{
 		"HostSystem":             {"VirtualMachine"},
 		"ResourcePool":           {"VirtualMachine"},

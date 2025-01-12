@@ -321,6 +321,6 @@ func doRegister() {
 }
 
 // nolint:gochecknoinits
-func init() {
+func noinit() {
 	doRegister()
 }

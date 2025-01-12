@@ -167,7 +167,7 @@ func protobufProcessor(opts []iprom.PromOption, feeder dkio.Feeder, body io.Read
 	return feeder.FeedV2(point.Metric, pts, dkio.WithInputName(inputName), dkio.DisableGlobalTags(true))
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	inputs.Add(inputName, func() inputs.Input {
 		return &Input{
 			feeder: dkio.DefaultFeeder(),

@@ -20,7 +20,7 @@ const (
 )
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	registerResource("dfpv", false, true, newDfpv)
 	registerMeasurements(&dfpvMetric{}, &dfpvObject{})
 }

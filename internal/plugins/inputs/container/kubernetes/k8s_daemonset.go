@@ -24,7 +24,7 @@ const (
 )
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	registerResource("daemonset", true, false, newDaemonset)
 	registerMeasurements(&daemonsetMetric{}, &daemonsetObject{})
 }

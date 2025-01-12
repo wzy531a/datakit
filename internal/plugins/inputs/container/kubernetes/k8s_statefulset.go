@@ -23,7 +23,7 @@ const (
 )
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	registerResource("statefulset", true, false, newStatefulset)
 	registerMeasurements(&statefulsetMetric{}, &statefulsetObject{})
 }

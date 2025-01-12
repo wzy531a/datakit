@@ -156,7 +156,7 @@ func newInput() *Input {
 }
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	inputs.Add(inputName, func() inputs.Input {
 		return newInput()
 	})

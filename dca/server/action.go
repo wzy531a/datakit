@@ -145,7 +145,7 @@ func getActionHandler(action string) ActionHandler {
 }
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	// default handler
 	ActionHandlerMap = map[string]ActionHandler{
 		ws.GetDatakitStatsAction: getDatakitStatsAction,

@@ -35,7 +35,7 @@ var (
 )
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	metrics.MustRegister(collector, ErrCountVec, LastErrVec)
 }
 

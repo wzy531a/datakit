@@ -40,7 +40,7 @@ var (
 
 var signals = make(chan os.Signal, 1)
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	signal.Notify(signals, syscall.SIGTERM)
 }
 

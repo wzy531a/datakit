@@ -21,7 +21,7 @@ const (
 )
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	registerResource("endpoint", true, false, newEndpoint)
 	registerMeasurements(&endpointMetric{})
 }

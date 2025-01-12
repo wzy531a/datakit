@@ -237,7 +237,7 @@ func (ipt *Input) Run() {
 	}
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	inputs.Add(inputName, func() inputs.Input {
 		return &Input{
 			Tags:      map[string]string{},

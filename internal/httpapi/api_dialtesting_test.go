@@ -37,7 +37,7 @@ func (*debugDialtestingMock) getResults(task dt.Task) (tags map[string]string, f
 	return map[string]string{}, debugFields
 }
 
-func init() { // nolint:gochecknoinits
+func noinit() { // nolint:gochecknoinits
 	defDialtestingMock = &debugDialtestingMock{}
 }
 

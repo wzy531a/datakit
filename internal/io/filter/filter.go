@@ -235,6 +235,6 @@ func StartFilter(p IPuller) {
 }
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	setupMetrics()
 }

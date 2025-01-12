@@ -22,7 +22,7 @@ const (
 )
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	registerResource("persistentvolume", false, false, newPersistentvolume)
 	registerMeasurements(&persistentvolumeObject{})
 }

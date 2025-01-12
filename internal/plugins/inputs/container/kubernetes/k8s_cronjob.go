@@ -24,7 +24,7 @@ const (
 )
 
 //nolint:gochecknoinits
-func init() {
+func noinit() {
 	registerResource("cronjob", true, false, newCronjob)
 	registerMeasurements(&cronjobMetric{}, &cronjobObject{})
 }

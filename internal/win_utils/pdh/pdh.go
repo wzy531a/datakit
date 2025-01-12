@@ -225,7 +225,7 @@ var (
 	pdh_ValidatePathW             *windows.LazyProc
 )
 
-func init() {
+func noinit() {
 	// Library
 	libpdhDll = windows.NewLazySystemDLL("pdh.dll")
 

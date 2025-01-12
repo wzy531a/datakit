@@ -155,13 +155,13 @@ func (m *DDSpan) GetType() string {
 	return ""
 }
 
-func init() {
+func noinit() {
 	proto.RegisterType((*DDSpan)(nil), "ddtrace.DDSpan")
 	proto.RegisterMapType((map[string]string)(nil), "ddtrace.DDSpan.MetaEntry")
 	proto.RegisterMapType((map[string]float64)(nil), "ddtrace.DDSpan.MetricsEntry")
 }
 
-func init() { proto.RegisterFile("span.proto", fileDescriptor_fc5f2b88b579999f) }
+func noinit() { proto.RegisterFile("span.proto", fileDescriptor_fc5f2b88b579999f) }
 
 var fileDescriptor_fc5f2b88b579999f = []byte{
 	// 522 bytes of a gzipped FileDescriptorProto

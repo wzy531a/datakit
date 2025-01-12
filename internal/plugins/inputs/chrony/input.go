@@ -479,7 +479,7 @@ func newDefaultInput() *Input {
 	return ipt
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	// To adapt to the variable name nvidia_smi --> chrony in the .conf file
 	inputs.Add("chrony", func() inputs.Input {
 		return newDefaultInput()

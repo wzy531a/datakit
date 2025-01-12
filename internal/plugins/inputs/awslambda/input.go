@@ -271,7 +271,7 @@ func resetLog() {
 	extension.SetLogger(l)
 }
 
-func init() { //nolint:gochecknoinits
+func noinit() { //nolint:gochecknoinits
 	inputs.Add(inputName, func() inputs.Input {
 		ipt := &Input{
 			EnableMetricCollection: true,
